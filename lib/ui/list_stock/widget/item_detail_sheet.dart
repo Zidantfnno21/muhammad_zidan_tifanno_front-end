@@ -87,6 +87,7 @@ class ItemDetailSheet extends StatelessWidget {
               children: [
                 OutlinedButton.icon(
                   onPressed: () {
+                    Navigator.of(context).pop();
                     context.pushNamed(
                       Routes.detailStock,
                       extra: DetailStockArgs(
